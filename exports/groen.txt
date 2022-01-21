@@ -1,0 +1,11 @@
+vulBlad( 100, 255, 100 )
+penAan( 0, 0, 0 )
+vulAan( 0, 0, 0 )
+x = 1
+Herhaal 10000 keer
+{
+    vooruit( x )
+    links( 20 )
+    x = x + 0,01
+}
+penUit( )

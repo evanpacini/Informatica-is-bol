@@ -1,0 +1,3 @@
+Deeltaak: min( x, y )
+abs( x-y )
+ret = 0.5*(x+y-ret)

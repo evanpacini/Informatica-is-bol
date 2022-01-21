@@ -1,0 +1,2 @@
+Deeltaak: log( b, e )
+ret = e~b

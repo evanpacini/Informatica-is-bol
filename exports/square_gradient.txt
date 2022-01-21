@@ -1,0 +1,30 @@
+penUit( )
+zijde = 500
+keer = 500
+stap( -250, -250 )
+loop( keer, zijde )
+
+Deeltaak: vierkant( zijde, r, g, b )
+vulAan( r, g, b )
+Herhaal 4 keer
+{
+    vooruit( zijde )
+    rechts( 90 )
+}
+vulUit( )
+
+
+Deeltaak: loop( keer, zijde )
+r = 0
+g = 255
+b = 0
+z = zijde
+Herhaal keer keer
+{
+    vierkant( z, r, g, b )
+    r = r + 255/keer
+    g = g - (255/keer)/1.55
+    b = b
+    z = z - (zijde/keer)
+    stap( (zijde/keer)/2, (zijde/keer)/2 )
+}

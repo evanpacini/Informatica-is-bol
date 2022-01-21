@@ -1,0 +1,34 @@
+x = 0
+ret = 0
+stap( 1000, 0 )
+stap( -2000, 0 )
+stap( 1000, 0 )
+stap( 0, -1000 )
+stap( 0, 2000 )
+stap( 0, -1000 )
+penUit( )
+Herhaal 8000 keer
+{
+    sin( 0.0628*x )
+    sin1 = ret
+    sin( 0.05*x )
+    stap( 0, 100*sin1 + 50*ret )
+    penAan(  )
+    stap( 0.05, 0 )
+    penUit( )
+    stap( 0, -100*sin1 - 50*ret )
+    x = x+0.05
+}
+
+Deeltaak: mod( x, y )
+Zolang x>y herhaal
+{
+    x = x-y
+}
+ret = x
+
+
+Deeltaak: sin( x )
+mod( x, 6.2831853072 )
+x = ret
+ret = 3.1415926536-x+((x-3.1415926536)^3)/6-((x-3.1415926536)^5)/120+((x-3.1415926536)^7)/5040-((x-3.1415926536)^9)/362880

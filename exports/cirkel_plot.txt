@@ -1,0 +1,23 @@
+x = -100
+ret = 0
+stap( 1000, 0 )
+stap( -2000, 0 )
+stap( 1000, 0 )
+stap( 0, -1000 )
+stap( 0, 2000 )
+stap( 0, -1000 )
+penUit( )
+stap( -100, 0 )
+Herhaal 2000 keer
+{
+    stap( 0, (10000-x^2)|2 )
+    penAan(  )
+    stap( 0.05, 0 )
+    penUit( )
+    stap( 0, -2*(10000-x^2)|2 )
+    penAan(  )
+    stap( 0.05, 0 )
+    penUit( )
+    stap( 0, (10000-x^2)|2 )
+    x = x+0.1
+}

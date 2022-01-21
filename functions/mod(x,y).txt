@@ -1,0 +1,16 @@
+Deeltaak: mod( x, y )
+Keuze: Als x>0 Dan
+{
+    Zolang x>y herhaal
+    {
+        x = x-y
+    }
+}
+Keuze: Als x<0 Dan
+{
+    Zolang -x>y herhaal
+    {
+        x = x+y
+    }
+}
+ret = x

@@ -1,0 +1,35 @@
+lengte = 100
+deler = 1.01
+Herhaal 1000 keer
+{
+    deeltaak3( lengte )
+    lengte = lengte /deler
+    deler = deler - 0.0001
+}
+ 
+Deeltaak: driehoek( lengte )
+vulAan( rood )
+Herhaal 3 keer
+{
+    vooruit( lengte )
+    rechts( 120 )
+}
+vulUit( )
+ 
+ 
+Deeltaak: vierkant( lengte )
+vulAan( geel )
+Herhaal 4 keer
+{
+    vooruit( lengte /2 )
+    rechts( 90 )
+}
+vulUit( )
+ 
+ 
+Deeltaak: deeltaak3( lengte )
+driehoek( lengte )
+rechts( 30 )
+vooruit( lengte *2 )
+vierkant( lengte/2 )
+rechts( 60 )

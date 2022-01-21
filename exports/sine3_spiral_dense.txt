@@ -1,0 +1,37 @@
+vulBlad( black )
+x = 0
+ret = 0
+Herhaal 100 keer
+{
+    sin( 0.00007853981*x )
+    abs(ret)
+    r = 255*ret
+    sin( 0.00007853981*x+1.0471975512 )
+    abs(ret)
+    g = 255*ret
+    sin( 0.00007853981*x+2.09439510239 )
+    abs(ret)
+    b = 255*ret
+    penAan( r, g, b )
+    Herhaal 400 keer
+    {
+        vooruit( 0.0002*x )
+        rechts( 1 )
+        x = x+1
+    }
+}
+
+Deeltaak: mod( x, y )
+Zolang x>y herhaal
+{
+    x = x-y
+}
+ret = x
+
+Deeltaak: abs( x )
+ret = (x^2)|2
+
+Deeltaak: sin( x )
+mod( x, 6.2831853072 )
+x = ret
+ret = 3.1415926536-x+((x-3.1415926536)^3)/6-((x-3.1415926536)^5)/120+((x-3.1415926536)^7)/5040-((x-3.1415926536)^9)/362880

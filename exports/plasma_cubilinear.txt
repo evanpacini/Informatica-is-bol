@@ -1,0 +1,13 @@
+vulBlad( black )
+x = 0
+z = 1
+Herhaal 1000 keer
+{
+    penAan( r, 0, b )
+    vooruit( z )
+    links( z )
+    z = z*1.0057561
+    r = 255-z^0.9
+    b = z
+    x = x+1
+}

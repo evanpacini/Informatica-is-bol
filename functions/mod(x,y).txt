@@ -1,16 +1,36 @@
 Deeltaak: mod( x, y )
+ret = x
 Keuze: Als x>0 Dan
 {
-    Zolang x>y herhaal
+    Keuze: Als y>0 Dan
     {
-        x = x-y
+        Zolang ret>y herhaal
+        {
+            ret = ret-y
+        }
+    }
+    Keuze: Als y<0 Dan
+    {
+        Zolang ret+y>y herhaal
+        {
+            ret = ret+y
+        }
     }
 }
 Keuze: Als x<0 Dan
 {
-    Zolang -x>y herhaal
+    Keuze: Als y>0 Dan
     {
-        x = x+y
+        Zolang ret+y<y herhaal
+        {
+            ret = ret+y
+        }
+    }
+    Keuze: Als y<0 Dan
+    {
+        Zolang ret<y herhaal
+        {
+            ret = ret-y
+        }
     }
 }
-ret = x

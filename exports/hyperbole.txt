@@ -1,0 +1,32 @@
+x = 0
+ret = 0
+stap( 1000, 0 )
+stap( -2000, 0 )
+stap( 1000, 0 )
+stap( 0, -1000 )
+stap( 0, 2000 )
+stap( 0, -1000 )
+penUit( )
+Herhaal 4000 keer
+{
+    f( x )
+    stap( 0, 500*ret )
+    penAan(  )
+    stap( -0.05, 0 )
+    stap( 0, -500*ret )
+    x = x-0.05
+}
+stap( 0.05*4000, 0 )
+x = 0
+Herhaal 4000 keer
+{
+    f( x )
+    stap( 0, 500*ret )
+    penAan(  )
+    stap( 0.05, 0 )
+    stap( 0, -500*ret )
+    x = x+0.05
+}
+
+Deeltaak: f( x )
+ret = 1/x
